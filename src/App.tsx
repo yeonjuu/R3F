@@ -1,7 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import "./App.css";
-import Three from "./Three";
 import { OrbitControls } from "@react-three/drei";
+import Material from "./Material";
 
 function App() {
   // leva is a library that provides a GUI for controlling variables in your React app.
@@ -27,7 +27,7 @@ function App() {
         <color attach="background" args={["#f0f0f0"]} />
         <axesHelper args={[5]} />
         <gridHelper args={[10, 10]} />
-        <Three />
+        <Material />
       </Canvas>
     </>
   );
